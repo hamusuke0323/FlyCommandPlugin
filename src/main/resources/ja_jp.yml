@@ -1,0 +1,174 @@
+plugin:
+  str: "FlyCommandPlugin設定"
+  server:
+    cancelblockdestructionduetoexplosion: "true に設定すると爆発が起きてもブロックが破壊されないようになります"
+    cancelbreakhanging: "true に設定すると壁掛けがエンティティによって壊されないようになります"
+    cancelexplosion: "true に設定すると爆発をキャンセルするようになります"
+    notifyentitydied: "true に設定するとエンティティが死亡したとき通知するようになります"
+  default:
+    canbreakblocks: "false に設定するとプレイヤーがクリエイティブモードでブロックが壊せないようになります"
+    canchangefoodlevel: "false に設定するとプレイヤーの満腹度が増減しないようになります"
+    candropitems: "false に設定するとプレイヤーがアイテムを捨てられなくなります"
+    canpickcreativeitems: "false に設定するとプレイヤーがクリエイティブタブからアイテムを取り出せないようになります"
+    disabledamage: "true に設定するとプレイヤーのダメージを無効化します"
+    enablesnowballdamage: "true に設定するとプレイヤーの雪玉によるダメージを有効化します"
+    instantlybreakblock: "true に設定するとプレイヤーが瞬時にブロックを破壊できるようになります"
+    knockbackvector: "プレイヤーが雪玉に当たった時のノックバックの量を設定します"
+    setjoinmessage: "プレイヤーが参加したときのデフォルトのメッセージを設定します"
+    setquitmessage: "プレイヤーが退出したときのデフォルトのメッセージを設定します"
+    unbreakable: "true に設定するとプレイヤーのアイテムの耐久力が減らないようになります"
+  player:
+    canbreakblocks: "false に設定すると指定したプレイヤーがクリエイティブモードでブロックが壊せないようになります"
+    canchangefoodlevel: "false に設定すると指定したプレイヤーの満腹度が増減しないようになります"
+    candropitems: "false に設定すると指定したプレイヤーがアイテムを捨てられなくなります"
+    canpickcreativeitems: "false に設定すると指定したプレイヤーがクリエイティブタブからアイテムを取り出せないようになります"
+    disabledamage: "true に設定すると指定したプレイヤーのダメージを無効化します"
+    enablesnowballdamage: "true に設定すると指定したプレイヤーの雪玉によるダメージを有効化します"
+    instantlybreakblock: "true に設定すると指定したプレイヤーが瞬時にブロックを破壊できるようになります"
+    knockbackvector: "指定したプレイヤーが雪玉に当たった時のノックバックの量を設定します"
+    setjoinmessage: "指定したプレイヤーが参加したときのメッセージを設定します"
+    setquitmessage: "指定したプレイヤーが退出したときのメッセージを設定します"
+    unbreakable: "true に設定すると指定したプレイヤーのアイテムの耐久力が減らないようになります"
+command:
+  suggestion:
+    convertstring:
+      toUnicode: "ユニコード表記に"
+      fromUnicode: "ユニコード表記から"
+      toBase64: "Base64 に"
+      fromBase64: "Base64 から"
+    fly:
+      allow: "プレイヤーの飛行を許可"
+  fly:
+    allow:
+      success:
+        single: "%s を飛行できるようにしました"
+        multiple: "%s 人のプレイヤーを飛行できるようにしました"
+    noallow:
+      success:
+        single: "%s を飛行できないようにしました"
+        multiple: "%s 人のプレイヤーを飛行できないようにしました"
+    setflyspeed:
+      success:
+        single: "%s の飛行速度を %s にしました"
+        multiple: "%s 人のプレイヤーの飛行速度を %s にしました"
+    setwalkspeed:
+      success:
+        single: "%s の歩行速度を %s にしました"
+        multiple: "%s 人のプレイヤーの歩行速度を %s にしました"
+    isflying:
+      true:
+        success:
+          single: "%s を飛行している状態にしました"
+          multiple: "%s 人のプレイヤーを飛行している状態にしました"
+      false:
+        success:
+          single: "%s を飛行していない状態にしました"
+          multiple: "%s 人のプレイヤーを飛行していない状態にしました"
+    getflyspeed:
+      success: "%s の飛行速度は %s です"
+    getwalkspeed:
+      success: "%s の歩行速度は %s です"
+    disabledamage:
+      true:
+        success:
+          single: "%s のダメージを無効化しました"
+          multiple: "%s 人のプレイヤーのダメージを無効化しました"
+      false:
+        success:
+          single: "%s のダメージを有効化しました"
+          multiple: "%s 人のプレイヤーのダメージを有効化しました"
+    setvelocity:
+      success:
+        single: "%s に %s, %s, %s の加速度を与えました"
+        multiple: "%s 人のプレイヤーに %s, %s, %s の加速度を与えました"
+    canbuild:
+      true:
+        single: "%s は周囲を変更することができるようになりました"
+        multiple: "%s 体のプレイヤーは周囲を変更することができるようになりました"
+      false:
+        single: "%s は周囲を変更することができないようになりました"
+        multiple: "%s 体のプレイヤーは周囲を変更することができないようになりました"
+  tpworld:
+    success:
+      single: "%s を %s の %s, %s, %s にテレポートさせました"
+      multiple: "%s 体のエンティティを %s の %s, %s, %s にテレポートさせました"
+    failed:
+      notfoundworld: "ワールドが見つかりませんでした"
+  ping:
+    windows:
+      success:
+        sending: "%s に ping を送信しています"
+        sent: "%s に ping を送信しました"
+      failed:
+        specifiedtoption: "-t オプションは無制限に実行されてしまうため、指定できません"
+    linuxmac:
+      success:
+        sending: "%s に ping を送信しています"
+        sent: "%s に ping を送信しました"
+      failed:
+        didntspecifycoption: "-c <回数> オプションを指定しないと無制限に実行されてしまうため、指定してください"
+  item:
+    settag:
+      success: "%s の持っている %s にNBTタグ %s を付与しました"
+    setdamage:
+      success: "%s の持っている %s のダメージ値を %s に設定しました"
+    setdurability:
+      success: "%s の持っている %s の耐久値を %s に設定しました"
+    setamount:
+      success: "%s の持っている %s の個数を %s に設定しました"
+    gettag:
+      success: "%s の持っている %s はNBTタグ %s を持っています"
+      failed: "%s の持っている %s はNBTタグを持っていません"
+    getdurability:
+      success: "%s の持っている %s の耐久値は %s です"
+      failed: "%s の持っている %s は耐久値を持っていません"
+    getdamage:
+      success: "%s の持っている %s のダメージ値は %s です"
+      failed: "%s の持っている %s はダメージ値を持っていません"
+    getamount:
+      success: "%s の持っている %s は %s 個スタックされています"
+  getproperty:
+    failed: "システム・プロパティへのアクセスを許可していないため取得できませんでした"
+  container:
+    failed: "%s, %s, %s における %s はタイルエンティティではありません"
+    add:
+      success: "%s, %s, %s における %s に %s を %s 個与えました"
+    set:
+      success: "%s, %s, %s における %s に %s を %s 個設置しました"
+    remove:
+      success: "%s, %s, %s における %s から %s を %s 個除去しました"
+    clear:
+      success: "%s, %s, %s における %s から全てのアイテムを除去しました"
+    get:
+      success:
+        start: "%s, %s, %s における %s には次のアイテムがあります"
+        counting: "%s が %s 個,"
+        counted: "%s が %s 個"
+      failed: "%s, %s, %s における %s はアイテムを持っていませんでした"
+  flycommandpluginsetting:
+    get:
+      player:
+        normal: "%s の %s %s は %s に設定されています"
+        emp: "%s の %s %s は設定されていません"
+        str: "%s の %s %s は '%s' に設定されています"
+        vec3: "%s の %s %s は %s, %s, %s に設定されています"
+      normal: "%s %s は %s に設定されています"
+      emp: "%s %s は 設定されていません"
+      str: "%s %s は '%s' に設定されています"
+      vec3: "%s %s は %s, %s, %s に設定されています"
+    set:
+      player:
+        normal: "%s の %s %s が %s に設定されました"
+        emp: "%s の %s %s が null に設定されました"
+        str: "%s の %s %s が '%s' に設定されました"
+        vec3: "%s の %s %s が %s, %s, %s に設定されました"
+      normal: "%s %s が %s に設定されました"
+      emp: "%s %s が null に設定されました"
+      str: "%s %s が '%s' に設定されました"
+      vec3: "%s %s が %s, %s, %s に設定されました"
+event:
+  entity:
+    death:
+      hasntkiller: "%s が死亡しました"
+      haskiller: "%s が %s によって殺害されました"
+    interact: "右クリックしたエンティティ: %s の UUID は %s です"
